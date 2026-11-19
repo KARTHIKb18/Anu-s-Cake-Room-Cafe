@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fdb3ee">
+  <meta name="description" content="ANKRITA is a home bakery led by head chef Anu. Healthy, homemade and freshly baked cakes, breads, muffins, brownies and tiramisu. Café coming soon.">
+  <title>ANKRITA | Healthy home bakes</title>
+  <script>document.documentElement.className = 'js';</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Fraunces:ital,opsz,wght@0,9..144,400..900;1,9..144,300..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="progress" aria-hidden="true"></div>
+  <div class="curtain" aria-hidden="true" hidden><span></span></div>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="site-header">
+    <a class="logo" href="#home" aria-label="ANKRITA home bakery, home">
+      <svg class="brand-mark" viewBox="0 0 352 60" width="168" height="29" aria-hidden="true">
+        <g fill="none" stroke="currentColor" stroke-width="8" stroke-linecap="round" stroke-linejoin="round">
+          <path class="ln" pathLength="1" style="--d:0" d="M4 54 L22 6 L40 54 M12 36 H32"/>
+          <path class="ln" pathLength="1" style="--d:1" d="M58 54 V6 L94 54 V6"/>
+          <path class="ln" pathLength="1" style="--d:2" d="M112 6 V54 M144 6 L112 32 M124 24 L146 54"/>
+          <path class="ln" pathLength="1" style="--d:3" d="M164 54 V6 H180 a14 14 0 0 1 0 28 H164 M178 34 L198 54"/>
+          <path class="ln accent" pathLength="1" style="--d:4" d="M216 6 V54"/>
+          <path class="ln" pathLength="1" style="--d:5" d="M232 6 H272 M252 6 V54"/>
+          <path class="ln" pathLength="1" style="--d:6" d="M290 54 L308 6 L326 54 M298 36 H318"/>
+        </g>
+        <circle class="dot" cx="344" cy="51" r="6"/>
+      </svg>
+      <span class="logo-text">Home bakery<small>Café &middot; soon</small></span>
+    </a>
+    <nav id="navigation" aria-label="Main navigation">
+      <span class="nav-pill" aria-hidden="true"></span>
+      <a href="#home" style="--i:0" aria-current="page">Home</a>
+      <a href="#menu" style="--i:1">Our bakes</a>
+      <a href="#about" style="--i:2">Chef Anu</a>
+      <a href="#visit" style="--i:3">Visit</a>
+      <a href="#cafe" style="--i:4">Café <sup>soon</sup></a>
+      <a href="#customise" style="--i:5">Customise</a>
+    </nav>
+    <div class="header-actions">
+      <button class="bag-button" id="open-cart" type="button" aria-haspopup="dialog">Your bag <span id="cart-count">0</span></button>
+      <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Open navigation" aria-controls="navigation" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HOME -->
+    <section class="view" id="home" aria-labelledby="home-title">
+      <div class="hero">
+        <div class="hero-head">
+          <h1 id="home-title" tabindex="-1" data-split="chars">ANKRITA</h1>
+          <div class="hero-aside">
+            <p class="hero-sub" data-split="words">Healthy. Homemade. Freshly baked.</p>
+            <div class="hero-aside-right">
+              <p class="reveal" style="--delay:500ms">Cakes, breads, muffins, brownies and tiramisu, baked in small batches by head chef Anu with wholesome ingredients and a whole lot of love.</p>
+              <div class="hero-cta reveal" style="--delay:650ms">
+                <a class="button magnetic" href="#menu"><span>See today's bakes</span></a>
+                <a class="soon-chip" href="#cafe">Café coming soon</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hero-media">
+          <div class="media wipe" style="--delay:150ms"><img data-speed="1" src="images/cake-chocolate.jpg" alt="A homemade chocolate cake with piped chocolate cream" width="1600" height="1173" fetchpriority="high"></div>
+          <div class="media wipe" style="--delay:350ms"><img data-speed="0.7" src="images/muffins.jpg" alt="Freshly baked blueberry muffins on a plate" width="1600" height="1067" fetchpriority="high"></div>
+          <svg class="badge" viewBox="0 0 200 200" aria-hidden="true">
+            <defs><path id="badge-path" d="M100,100 m-72,0 a72,72 0 1,1 144,0 a72,72 0 1,1 -144,0"/></defs>
+            <circle cx="100" cy="100" r="100" fill="#fdb3ee"/>
+            <g class="badge-ring"><text font-size="14.5" font-weight="700" letter-spacing="2" fill="#422a22"><textPath href="#badge-path" textLength="440" lengthAdjust="spacing">HEALTHY * HOMEMADE * FRESHLY BAKED *</textPath></text></g>
+            <text x="96" y="124" text-anchor="middle" font-family="Fraunces, Georgia, serif" font-size="72" font-weight="900" fill="#422a22">A</text>
+            <circle cx="131" cy="119" r="6" fill="#c13a9f"/>
+          </svg>
+        </div>
+      </div>
+
+      <div class="marquee" aria-hidden="true"><div class="marquee-track"><span>Healthy &#10035; Homemade &#10035; Freshly baked &#10035; Cakes &#10035; Breads &#10035; Muffins &#10035; Brownies &#10035; Tiramisu &#10035; </span><span>Healthy &#10035; Homemade &#10035; Freshly baked &#10035; Cakes &#10035; Breads &#10035; Muffins &#10035; Brownies &#10035; Tiramisu &#10035; </span></div></div>
+
+      <section class="oven" id="home-menu" aria-labelledby="oven-title">
+        <div class="oven-bg"><img data-speed="1" src="images/brownies-tray.jpg" alt="" width="1600" height="1067" loading="lazy"></div>
+        <div class="sticker sticker-a" data-rotate="1" aria-hidden="true"><span>Homemade</span></div>
+        <div class="oven-inner">
+          <h2 id="oven-title" data-split="words">Fresh from Chef Anu's oven</h2>
+          <article class="menu-card" data-flip>
+            <h3>Today's bakes</h3>
+            <ul class="daily-menu" id="daily-menu"></ul>
+            <noscript><p>Dark chocolate cake ₹750. Whole wheat sourdough ₹280. Blueberry oat muffin ₹120. Fudgy walnut brownie ₹110. Tiramisu jar ₹220.</p></noscript>
+            <hr class="dashed">
+            <a class="button magnetic" href="#menu"><span>See all bakes</span></a>
+          </article>
+        </div>
+        <div class="sticker sticker-b" data-rotate="-1" aria-hidden="true"><span>Fresh</span></div>
+      </section>
+
+      <section class="section bakes-section" id="home-bakes">
+        <div class="section-heading">
+          <div><p class="eyebrow reveal">Small batches, big love</p><h2 data-split="words">Made at home. Baked today.</h2></div>
+          <a class="text-link reveal" href="#menu">Everything we bake <span aria-hidden="true">&#8599;</span></a>
+        </div>
+        <div class="product-grid" id="featured-products"></div>
+      </section>
+
+      <section class="story-band">
+        <div class="media story-image wipe"><img data-speed="1" src="images/fresh-loaf.jpg" alt="Hands holding a freshly baked loaf wrapped in a cloth" width="1000" height="1250" loading="lazy"></div>
+        <div class="story-copy">
+          <p class="eyebrow reveal">Meet the head chef</p>
+          <h2 data-split="words">Hi, I'm Anu.<br>I bake with heart.</h2>
+          <p class="reveal">As head chef and founder, I started baking for family and friends. That grew into ANKRITA, a little home bakery for everyone who loves honest, wholesome treats.</p>
+          <p class="reveal" style="--delay:100ms">Every bake is made by me, in small batches, with the same ingredients I'd happily give my own family. No shortcuts, just good food baked fresh.</p>
+          <a class="button magnetic reveal" style="--delay:200ms" href="#about"><span>Meet Chef Anu</span></a>
+        </div>
+      </section>
+
+      <section class="seasonal section">
+        <div class="seasonal-copy">
+          <p class="eyebrow reveal">Everyone's favourite</p>
+          <h2 data-split="words">Fudgy. Wholesome. <i>Worth it.</i></h2>
+          <p class="reveal">Dense, chocolatey and packed with walnuts. Chef Anu's brownies are proof that a healthier bake can still feel like a treat.</p>
+          <button class="text-link reveal" type="button" data-add="brownie">Add a brownie <span aria-hidden="true">&#43;</span></button>
+        </div>
+        <div class="seasonal-visual">
+          <div class="media seasonal-image wipe"><img data-speed="1" src="images/brownies.jpg" alt="A stack of fudgy brownies drizzled with chocolate" width="1100" height="1100" loading="lazy"></div>
+          <span class="image-label reveal">The fudgy walnut brownie / ₹110</span>
+          <div class="sticker sticker-c" data-rotate="1" aria-hidden="true"><span>Fudgy!</span></div>
+        </div>
+      </section>
+
+      <section class="neighbors section" aria-labelledby="neighbors-title">
+        <h2 id="neighbors-title" data-split="words">Sweet words</h2>
+        <div class="pan-row"><figure class="quote-card quote-pink" data-pan="400"><blockquote>&ldquo;Chef Anu's chocolate cake was the star of my daughter's birthday. Rich and moist, and somehow not too sweet.&rdquo;</blockquote><figcaption>Priya S.</figcaption></figure></div>
+        <div class="pan-row"><figure class="quote-card quote-butter" data-pan="300"><blockquote>&ldquo;Her blueberry oat muffins are my weekday breakfast now. You can taste that everything is homemade.&rdquo;</blockquote><figcaption>Rohan M.</figcaption></figure></div>
+        <div class="pan-row"><figure class="quote-card quote-sage" data-pan="200"><blockquote>&ldquo;The tiramisu jars are dangerously good. Fresh, light, and made with so much love.&rdquo;</blockquote><figcaption>Meera K.</figcaption></figure></div>
+      </section>
+
+      <section class="custom-band section">
+        <div>
+          <p class="eyebrow reveal">Celebrations &amp; gifting</p>
+          <h2 data-split="words">Dreaming of a custom cake?</h2>
+        </div>
+        <div class="custom-actions">
+          <p class="reveal">Tell Chef Anu the flavour, size and date. Send your request on WhatsApp or email and we'll reply with availability and price.</p>
+          <div class="hero-cta reveal" style="--delay:150ms">
+            <a class="button magnetic" href="#custom-order"><span>Start a custom order</span></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="upcoming section" id="cafe" aria-labelledby="cafe-title">
+        <div class="upcoming-cup" aria-hidden="true">
+          <svg viewBox="0 0 220 240">
+            <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path class="steam" style="--s:0" d="M70 70 c-14 -14 14 -26 0 -42"/>
+              <path class="steam" style="--s:1" d="M104 64 c-14 -14 14 -26 0 -46"/>
+              <path class="steam" style="--s:2" d="M138 70 c-14 -14 14 -26 0 -42"/>
+              <path class="cup" stroke-width="16" d="M36 100 V150 a62 62 0 0 0 124 0 V100"/>
+              <path class="cup" stroke-width="12" d="M160 116 h12 a22 22 0 0 1 0 44 h-14"/>
+              <path class="saucer" stroke-width="10" d="M20 232 H180"/>
+            </g>
+            <circle cx="98" cy="146" r="13" class="cup-dot"/>
+          </svg>
+        </div>
+        <div class="upcoming-copy">
+          <span class="soon-chip reveal">Coming soon</span>
+          <h2 id="cafe-title" data-split="words">ANKRITA Café is on its way.</h2>
+          <p class="reveal">Soon you'll be able to pull up a chair, order a fresh coffee, and enjoy your favourite bakes right where they're made.</p>
+          <ul class="upcoming-list">
+            <li class="reveal" style="--delay:0ms">Freshly brewed coffee</li>
+            <li class="reveal" style="--delay:100ms">Teas &amp; warm drinks</li>
+            <li class="reveal" style="--delay:200ms">A cosy corner to sit and stay</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="gallery" aria-label="A little slice of Chef Anu's kitchen">
+        <div class="media wipe" style="--delay:0ms"><img data-speed="1" src="images/muffin-crumble.jpg" alt="Blueberry crumble muffins with fresh blueberries" width="800" height="1000" loading="lazy"></div>
+        <div class="media wipe" style="--delay:120ms"><img data-speed="0.8" src="images/tiramisu-jars.jpg" alt="Homemade tiramisu in glass jars dusted with cocoa" width="800" height="1000" loading="lazy"></div>
+        <div class="media wipe" style="--delay:240ms"><img data-speed="1" src="images/cake-berry.jpg" alt="A slice of layered cream cake topped with fresh raspberries" width="800" height="1000" loading="lazy"></div>
+        <div class="media wipe" style="--delay:360ms"><img data-speed="0.8" src="images/sourdough.jpg" alt="Rustic sourdough loaf with a flour-dusted crust" width="800" height="1000" loading="lazy"></div>
+      </section>
+    </section>
+
+    <!-- MENU -->
+    <section class="view" id="menu" aria-labelledby="menu-title" hidden>
+      <div class="page-intro section"><p class="eyebrow reveal">Healthy, homemade, freshly baked</p><h1 id="menu-title" tabindex="-1" data-split="words">Pick your <i>happy.</i></h1><p class="reveal">Everything is baked by head chef Anu, in small batches, with wholesome ingredients.</p></div>
+      <section class="menu-section section" aria-label="Bakes">
+        <div class="menu-toolbar"><div class="filters" role="group" aria-label="Filter bakes"><button type="button" data-filter="all" aria-pressed="true">All bakes</button><button type="button" data-filter="cakes" aria-pressed="false">Cakes</button><button type="button" data-filter="breads" aria-pressed="false">Breads</button><button type="button" data-filter="muffins" aria-pressed="false">Muffins</button><button type="button" data-filter="brownies" aria-pressed="false">Brownies</button><button type="button" data-filter="tiramisu" aria-pressed="false">Tiramisu</button></div><p class="menu-note">Baked fresh. Gone when it's gone.</p></div>
+        <div class="product-grid" id="menu-products"></div>
+        <div class="menu-soon reveal"><span class="soon-chip">Coming soon</span><p>Coffee, teas and our café menu are on the way. <a href="#cafe">Find out more</a></p></div>
+        <p class="allergen-note">Baked in a home kitchen that handles wheat, milk, eggs, nuts and soy. This is a sample menu. Orders are confirmed directly with ANKRITA on WhatsApp or email, and delivery isn't offered yet, so please arrange your own or pick up.</p>
+      </section>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="view" id="about" aria-labelledby="about-title" hidden>
+      <div class="page-intro section"><p class="eyebrow reveal">The head chef behind ANKRITA</p><h1 id="about-title" tabindex="-1" data-split="words">Hi, I'm <i>Anu.</i></h1><p class="reveal">Head chef and founder, baking in my little home kitchen.</p></div>
+      <section class="story-band about-story">
+        <div class="media story-image wipe"><img data-speed="1" src="images/home-kitchen.jpg" alt="A bright, tidy home kitchen with open shelves" width="1000" height="1200" loading="lazy"></div>
+        <div class="story-copy">
+          <p class="eyebrow reveal">The ANKRITA way</p>
+          <h2 data-split="words">A home kitchen.<br>A big heart.</h2>
+          <p class="reveal">I've always believed that the best treats are the ones made at home. Simple, honest, and baked for people you care about.</p>
+          <p class="reveal" style="--delay:100ms">ANKRITA began in my own kitchen, baking cakes and muffins for family and friends. Word spread, and today I bake for a lot more people, but still the same way: by hand, in small batches, and always fresh.</p>
+          <p class="reveal" style="--delay:200ms">I choose wholesome ingredients and keep things balanced, so you can enjoy something delicious and feel good about it too.</p>
+        </div>
+      </section>
+      <section class="section stats">
+        <div class="stat reveal"><strong><span data-count="100">100</span><small>%</small></strong><p>homemade, always</p></div>
+        <div class="stat reveal" style="--delay:120ms"><strong><span data-count="5">5</span></strong><p>kinds of goodness, baked fresh</p></div>
+        <div class="stat reveal" style="--delay:240ms"><strong><span data-count="1">1</span></strong><p>baker who really cares</p></div>
+      </section>
+      <section class="section values">
+        <div class="reveal"><span class="value-number">01 /</span><h2>Wholesome<br>first.</h2><p>Good, simple ingredients, and treats that feel indulgent without being heavy.</p></div>
+        <div class="reveal" style="--delay:120ms"><span class="value-number">02 /</span><h2>Always<br>fresh.</h2><p>Baked in small batches, so what you take home is as fresh as it gets.</p></div>
+        <div class="reveal" style="--delay:240ms"><span class="value-number">03 /</span><h2>Made with<br>love.</h2><p>Every bake is made by head chef Anu, the same way she'd make it for her own family.</p></div>
+      </section>
+      <div class="media wide-photo wipe"><img data-speed="1" src="images/cake-berry.jpg" alt="A slice of layered cream cake topped with fresh raspberries" width="1600" height="2000" loading="lazy"></div>
+    </section>
+
+    <!-- VISIT -->
+    <section class="view" id="visit" aria-labelledby="visit-title" hidden>
+      <div class="page-intro section"><p class="eyebrow reveal">Follow the smell of fresh baking</p><h1 id="visit-title" tabindex="-1" data-split="words">Come say<br><i>hello.</i></h1><p class="reveal">Pick up your bakes, fresh from Chef Anu's kitchen.</p></div>
+      <section class="visit-layout section">
+        <div class="media visit-photo wipe"><img data-speed="1" src="images/tiramisu-jars.jpg" alt="Homemade tiramisu in glass jars" width="1000" height="1200" loading="lazy"></div>
+        <div class="visit-details">
+          <p class="eyebrow reveal">Pick-up &amp; visits</p>
+          <h2 data-split="words">Find us<br>at ANKRITA.</h2>
+          <dl>
+            <div class="reveal"><dt>Find us</dt><dd>12, Baker's Lane, Indiranagar<br>Bengaluru, Karnataka 560038<br><small>Fictional address for this bakery concept.</small></dd></div>
+            <div class="reveal" style="--delay:100ms"><dt>Baking hours</dt><dd>Tuesday - Friday <span>8am - 6pm</span><br>Saturday - Sunday <span>9am - 4pm</span></dd></div>
+            <div class="reveal" style="--delay:200ms"><dt>Say hello</dt><dd><a data-email></a><br><a data-whatsapp="Hi ANKRITA! I have a question." target="_blank" rel="noopener noreferrer">Chat on WhatsApp</a></dd></div>
+            <div class="reveal" style="--delay:300ms"><dt>Café</dt><dd>Coming soon: sit-down coffee and a cosy café corner.</dd></div>
+          </dl>
+          <a class="button magnetic reveal" href="https://www.google.com/maps/search/bakeries+in+Bengaluru" target="_blank" rel="noopener noreferrer"><span>Explore Bengaluru bakeries</span></a>
+        </div>
+      </section>
+      <section class="quote-band"><p class="eyebrow reveal">See you soon</p><h2 data-split="words">Come for the cake.<br>Stay for the café, soon.</h2><p class="reveal">Little ones, friends and long catch-ups welcome.</p></section>
+    </section>
+    <!-- CONTACT -->
+    <section class="view" id="customise" aria-labelledby="customise-title" hidden>
+      <div class="page-intro section">
+        <div class="doodles" aria-hidden="true">
+          <span class="d d-heart" style="--x:7%;--y:20%;--s:44px;--r:-12deg;--t:7s;--dl:-1s"><svg viewBox="0 0 48 48"><path d="M24 42C9 31 6 20 12 13c5-5 10-2 12 3 2-5 7-8 12-3 6 7 3 18-12 29z" fill="#e260c4"/></svg></span>
+          <span class="d d-spark" style="--x:15%;--y:62%;--s:30px;--r:0deg;--t:6s;--dl:-3s"><svg viewBox="0 0 48 48"><path d="M24 3c2 12 9 19 21 21-12 2-19 9-21 21-2-12-9-19-21-21 12-2 19-9 21-21z" fill="#f6dd8e"/></svg></span>
+          <span class="d d-cupcake" style="--x:4%;--y:68%;--s:58px;--r:-8deg;--t:8s;--dl:-2s"><svg viewBox="0 0 48 48"><path d="M12 28h24l-3 15H15z" fill="#fdb3ee"/><path d="M19 29l1.5 13M24 29v13M29 29l-1.5 13" fill="none" stroke-width="1.6"/><path d="M9 28c0-6 5-8 8-10 1-6 13-6 14 0 3 2 8 4 8 10z" fill="#faf5e1"/><circle cx="24" cy="10" r="3.6" fill="#c13a9f"/></svg></span>
+          <span class="d d-donut" style="--x:90%;--y:18%;--s:54px;--r:14deg;--t:9s;--dl:-4s"><svg viewBox="0 0 48 48"><circle cx="24" cy="24" r="18" fill="#fdb3ee"/><circle cx="24" cy="24" r="6" fill="#faf5e1"/><path d="M13 15l3 2M32 12l2 3M11 29l3-1M35 31l-3-2M23 9l1 3M28 38l-1-3" stroke="#f6dd8e" stroke-width="3" fill="none"/></svg></span>
+          <span class="d d-spark" style="--x:84%;--y:70%;--s:36px;--r:0deg;--t:5s;--dl:-1s"><svg viewBox="0 0 48 48"><path d="M24 3c2 12 9 19 21 21-12 2-19 9-21 21-2-12-9-19-21-21 12-2 19-9 21-21z" fill="#f6dd8e"/></svg></span>
+          <span class="d d-heart" style="--x:94%;--y:58%;--s:32px;--r:12deg;--t:6.5s;--dl:-2s"><svg viewBox="0 0 48 48"><path d="M24 42C9 31 6 20 12 13c5-5 10-2 12 3 2-5 7-8 12-3 6 7 3 18-12 29z" fill="#e260c4"/></svg></span>
+        </div>
+        <p class="eyebrow reveal">Customise your order</p>
+        <h1 id="customise-title" tabindex="-1" data-split="words">Let's bake <i>something special.</i></h1>
+        <p class="reveal">Birthday cake, gifting box or a quick question? Message Chef Anu on WhatsApp or email.</p>
+        <a class="button magnetic reveal" data-whatsapp="Hi ANKRITA! I have a question." target="_blank" rel="noopener noreferrer"><span>Chat on WhatsApp</span></a>
+      </div>
+      <section class="section contact-grid">
+        <div class="doodles" aria-hidden="true">
+          <i class="sp" style="--x:4%;--c:#e260c4;--r:20deg;--t:11s;--dl:-2s"></i><i class="sp" style="--x:10%;--c:#f6dd8e;--r:-30deg;--t:13s;--dl:-8s"></i><i class="sp" style="--x:18%;--c:#c13a9f;--r:60deg;--t:10s;--dl:-5s"></i><i class="sp" style="--x:26%;--c:#fdb3ee;--r:-10deg;--t:14s;--dl:-1s"></i><i class="sp" style="--x:34%;--c:#f6dd8e;--r:40deg;--t:12s;--dl:-9s"></i><i class="sp" style="--x:44%;--c:#e260c4;--r:-50deg;--t:9s;--dl:-4s"></i><i class="sp" style="--x:54%;--c:#c13a9f;--r:10deg;--t:13s;--dl:-7s"></i><i class="sp" style="--x:63%;--c:#fdb3ee;--r:70deg;--t:11s;--dl:-3s"></i><i class="sp" style="--x:72%;--c:#f6dd8e;--r:-20deg;--t:10s;--dl:-6s"></i><i class="sp" style="--x:80%;--c:#e260c4;--r:30deg;--t:14s;--dl:-10s"></i><i class="sp" style="--x:88%;--c:#c13a9f;--r:-60deg;--t:12s;--dl:-2s"></i><i class="sp" style="--x:94%;--c:#f6dd8e;--r:15deg;--t:9s;--dl:-5s"></i>
+          <span class="d d-heart" style="--x:6%;--y:10%;--s:44px;--r:-12deg;--t:7s;--dl:-1s"><svg viewBox="0 0 48 48"><path d="M24 42C9 31 6 20 12 13c5-5 10-2 12 3 2-5 7-8 12-3 6 7 3 18-12 29z" fill="#e260c4"/></svg></span>
+          <span class="d d-spark" style="--x:14%;--y:28%;--s:34px;--r:0deg;--t:5s;--dl:-2s"><svg viewBox="0 0 48 48"><path d="M24 3c2 12 9 19 21 21-12 2-19 9-21 21-2-12-9-19-21-21 12-2 19-9 21-21z" fill="#f6dd8e"/></svg></span>
+          <span class="d d-cupcake" style="--x:5%;--y:48%;--s:62px;--r:-8deg;--t:8s;--dl:-3s"><svg viewBox="0 0 48 48"><path d="M12 28h24l-3 15H15z" fill="#fdb3ee"/><path d="M19 29l1.5 13M24 29v13M29 29l-1.5 13" fill="none" stroke-width="1.6"/><path d="M9 28c0-6 5-8 8-10 1-6 13-6 14 0 3 2 8 4 8 10z" fill="#faf5e1"/><circle cx="24" cy="10" r="3.6" fill="#c13a9f"/></svg></span>
+          <span class="d d-donut" style="--x:14%;--y:70%;--s:52px;--r:14deg;--t:9s;--dl:-4s"><svg viewBox="0 0 48 48"><circle cx="24" cy="24" r="18" fill="#fdb3ee"/><circle cx="24" cy="24" r="6" fill="#faf5e1"/><path d="M13 15l3 2M32 12l2 3M11 29l3-1M35 31l-3-2M23 9l1 3M28 38l-1-3" stroke="#f6dd8e" stroke-width="3" fill="none"/></svg></span>
+          <span class="d d-spark" style="--x:8%;--y:88%;--s:30px;--r:0deg;--t:6s;--dl:-1s"><svg viewBox="0 0 48 48"><path d="M24 3c2 12 9 19 21 21-12 2-19 9-21 21-2-12-9-19-21-21 12-2 19-9 21-21z" fill="#f6dd8e"/></svg></span>
+          <span class="d d-heart" style="--x:86%;--y:8%;--s:38px;--r:10deg;--t:6.5s;--dl:-2s"><svg viewBox="0 0 48 48"><path d="M24 42C9 31 6 20 12 13c5-5 10-2 12 3 2-5 7-8 12-3 6 7 3 18-12 29z" fill="#e260c4"/></svg></span>
+          <span class="d d-cupcake" style="--x:91%;--y:26%;--s:58px;--r:12deg;--t:7.5s;--dl:-5s"><svg viewBox="0 0 48 48"><path d="M12 28h24l-3 15H15z" fill="#fdb3ee"/><path d="M19 29l1.5 13M24 29v13M29 29l-1.5 13" fill="none" stroke-width="1.6"/><path d="M9 28c0-6 5-8 8-10 1-6 13-6 14 0 3 2 8 4 8 10z" fill="#faf5e1"/><circle cx="24" cy="10" r="3.6" fill="#c13a9f"/></svg></span>
+          <span class="d d-spark" style="--x:83%;--y:44%;--s:38px;--r:0deg;--t:5.5s;--dl:-3s"><svg viewBox="0 0 48 48"><path d="M24 3c2 12 9 19 21 21-12 2-19 9-21 21-2-12-9-19-21-21 12-2 19-9 21-21z" fill="#f6dd8e"/></svg></span>
+          <span class="d d-donut" style="--x:90%;--y:60%;--s:54px;--r:-12deg;--t:8.5s;--dl:-6s"><svg viewBox="0 0 48 48"><circle cx="24" cy="24" r="18" fill="#fdb3ee"/><circle cx="24" cy="24" r="6" fill="#faf5e1"/><path d="M13 15l3 2M32 12l2 3M11 29l3-1M35 31l-3-2M23 9l1 3M28 38l-1-3" stroke="#f6dd8e" stroke-width="3" fill="none"/></svg></span>
+          <span class="d d-heart" style="--x:84%;--y:80%;--s:46px;--r:-8deg;--t:7s;--dl:-2s"><svg viewBox="0 0 48 48"><path d="M24 42C9 31 6 20 12 13c5-5 10-2 12 3 2-5 7-8 12-3 6 7 3 18-12 29z" fill="#e260c4"/></svg></span>
+          <span class="d d-spark" style="--x:93%;--y:90%;--s:30px;--r:0deg;--t:6s;--dl:-4s"><svg viewBox="0 0 48 48"><path d="M24 3c2 12 9 19 21 21-12 2-19 9-21 21-2-12-9-19-21-21 12-2 19-9 21-21z" fill="#f6dd8e"/></svg></span>
+        </div>
+        <div class="contact-card contact-custom reveal" id="custom-order">
+          <div class="sticker sticker-note" aria-hidden="true"><span>Yum!</span></div>
+          <p class="eyebrow">Custom order</p>
+          <h2>Tell us what you're dreaming of.</h2>
+          <p class="card-note">Fill this in, then send it on WhatsApp or email. Your details are prefilled in the message, so you only need to tap send.</p>
+          <form id="custom-form" class="form" novalidate>
+            <div class="form-row">
+              <label class="field"><span>Your name <b class="req">*</b></span><input name="name" required maxlength="80" autocomplete="name"></label>
+              <label class="field"><span>Phone number <b class="req">*</b></span><span class="phone-input"><span class="dial" aria-hidden="true">+91</span><input name="phone" type="tel" required inputmode="numeric" autocomplete="tel-national" maxlength="10" pattern="[0-9]{10}" placeholder="9876543210" aria-label="Phone number, 10 digits after +91"></span></label>
+            </div>
+            <div class="form-row">
+              <label class="field"><span>What would you like?</span><select name="item"><option>Cake</option><option>Tiramisu</option><option>Brownies</option><option>Muffins</option><option>Bread</option><option>Gift box / hamper</option><option>Something else</option></select></label>
+              <label class="field"><span>Date needed <b class="req">*</b></span><input name="needed" type="date" required></label>
+            </div>
+            <div class="form-row">
+              <label class="field"><span>Time needed <b class="req">*</b></span><input name="time" type="time" required></label>
+              <label class="field"><span>Email <small class="opt">(optional)</small></span><input name="email" type="email" maxlength="120" autocomplete="email" placeholder="you@example.com"></label>
+            </div>
+            <p class="slot-hint">Pick-up and courier slots: Tue-Fri 8am-6pm, Sat-Sun 9am-4pm. Closed on Mondays.</p>
+            <label class="field"><span>Quantity / size <small class="opt">(optional)</small></span><input name="quantity" maxlength="80" placeholder="e.g. 1 kg cake, 12 cupcakes"></label>
+            <label class="field"><span>Describe your order <b class="req">*</b></span><textarea name="details" required rows="5" maxlength="800" placeholder="Flavour, size or weight, eggless?, design, message on the cake..."></textarea></label>
+            <label class="field"><span>Location / address</span><textarea name="address" rows="2" maxlength="300" autocomplete="street-address" placeholder="Your area or full address, so we can plan your pick-up or courier"></textarea></label>
+            <div class="locate-row"><button type="button" class="chip-button" data-locate>Use my current location</button><p class="hint" data-locate-status role="status"></p></div>
+            <fieldset class="choice">
+              <legend>How will you get your order?</legend>
+              <label class="choice-card"><input type="radio" name="delivery" value="self-delivery" checked><span>I'll arrange my own delivery</span><small>Porter, Dunzo, Rapido, a friend or family</small></label>
+              <label class="choice-card"><input type="radio" name="delivery" value="pickup"><span>I'll pick it up</span><small>From ANKRITA's home kitchen</small></label>
+            </fieldset>
+            <p class="notice"><strong>ANKRITA doesn't offer delivery yet.</strong> We'll tell you when it's ready, and you book your own courier or collect it.</p>
+            <input type="text" name="website" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+            <div class="form-actions">
+              <button type="submit" class="button"><span>Send on WhatsApp</span></button>
+              <button type="button" class="button button-ghost" id="custom-email"><span>Send by email</span></button>
+            </div>
+            <div class="form-status" role="status" aria-live="polite" hidden></div>
+            <small class="privacy">Nothing is stored on this site. WhatsApp opens with your message ready to send. "Send by email" delivers it straight to ANKRITA through the FormSubmit email service.</small>
+          </form>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-top">
+      <div><p class="eyebrow">Healthy &middot; Homemade &middot; Freshly baked</p><h2>Baked fresh,<br>made <i>with love.</i></h2></div>
+      <div class="footer-links"><a href="#menu">Our bakes <span aria-hidden="true">&#8599;</span></a><a href="#about">Chef Anu <span aria-hidden="true">&#8599;</span></a><a href="#visit">Visit <span aria-hidden="true">&#8599;</span></a><a href="#cafe">Café &middot; coming soon <span aria-hidden="true">&#8599;</span></a><a href="#custom-order">Custom orders <span aria-hidden="true">&#8599;</span></a><button type="button" data-open-help aria-haspopup="dialog">Help &amp; feedback <span aria-hidden="true">&#8599;</span></button></div>
+    </div>
+    <div class="footer-social">
+      <p class="eyebrow">Follow along</p>
+      <ul class="social">
+        <li class="reveal"><a href="https://www.instagram.com/ankrita.bakes" target="_blank" rel="noopener noreferrer" aria-label="ANKRITA on Instagram"><span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r=".6" fill="currentColor"/></svg></span><span class="handle">@ankrita.bakes</span></a></li>
+        <li class="reveal" style="--delay:90ms"><a href="https://www.facebook.com/ankrita.bakes" target="_blank" rel="noopener noreferrer" aria-label="ANKRITA on Facebook"><span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.5 3.5h-2.7a4 4 0 0 0-4 4v2.8H7v3.9h2.8v6.3h3.9v-6.3h2.9l.6-3.9h-3.5V7.9c0-.5.4-.9.9-.9h2.4z"/></svg></span><span class="handle">/ankrita.bakes</span></a></li>
+        <li class="reveal" style="--delay:180ms"><a href="https://www.youtube.com/@ankritabakes" target="_blank" rel="noopener noreferrer" aria-label="ANKRITA on YouTube"><span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="5.5" width="19" height="13" rx="4"/><path d="M10 9.2v5.6l4.8-2.8z" fill="currentColor"/></svg></span><span class="handle">@ankritabakes</span></a></li>
+        <li class="reveal" style="--delay:270ms"><a href="https://www.google.com/search?q=ANKRITA+home+bakery+Bengaluru" target="_blank" rel="noopener noreferrer" aria-label="ANKRITA on Google"><span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.2 6.9A8 8 0 1 0 20 12h-8"/></svg></span><span class="handle">ANKRITA on Google</span></a></li>
+      </ul>
+    </div>
+    <a class="footer-brand" href="#home" aria-label="ANKRITA, back to home">
+      <svg class="brand-mark draw-on-view" viewBox="0 0 352 60" aria-hidden="true">
+        <g fill="none" stroke="currentColor" stroke-width="8" stroke-linecap="round" stroke-linejoin="round">
+          <path class="ln" pathLength="1" style="--d:0" d="M4 54 L22 6 L40 54 M12 36 H32"/>
+          <path class="ln" pathLength="1" style="--d:1" d="M58 54 V6 L94 54 V6"/>
+          <path class="ln" pathLength="1" style="--d:2" d="M112 6 V54 M144 6 L112 32 M124 24 L146 54"/>
+          <path class="ln" pathLength="1" style="--d:3" d="M164 54 V6 H180 a14 14 0 0 1 0 28 H164 M178 34 L198 54"/>
+          <path class="ln accent" pathLength="1" style="--d:4" d="M216 6 V54"/>
+          <path class="ln" pathLength="1" style="--d:5" d="M232 6 H272 M252 6 V54"/>
+          <path class="ln" pathLength="1" style="--d:6" d="M290 54 L308 6 L326 54 M298 36 H318"/>
+        </g>
+        <circle class="dot" cx="344" cy="51" r="6"/>
+      </svg>
+      <span class="footer-tag" aria-hidden="true">home bakery<br>&amp; café</span>
+    </a>
+    <div class="footer-bottom"><span>&copy; <span id="year">2026</span> ANKRITA &middot; Head chef Anu</span><span>Orders are confirmed directly with ANKRITA. No delivery yet.</span><a href="#home">Back to the top &#8593;</a></div>
+  </footer>
+
+  <dialog id="help-dialog" aria-labelledby="help-title">
+    <div class="cart-header"><div><p class="eyebrow">Help &amp; feedback</p><h2 id="help-title">We'd love to hear from you.</h2></div><button type="button" class="icon-button" id="close-help" aria-label="Close help" title="Close">&#215;</button></div>
+    <p class="card-note">A question, a suggestion or a bake you loved? Write it here and it's emailed straight to ANKRITA (through the FormSubmit email service).</p>
+    <form id="help-form" class="form" novalidate>
+      <label class="field"><span>Your name <b class="req">*</b></span><input name="name" required maxlength="80" autocomplete="name"></label>
+      <label class="field"><span>Your email <b class="req">*</b></span><input name="email" type="email" required maxlength="120" autocomplete="email" placeholder="you@example.com"></label>
+      <label class="field"><span>Topic</span><select name="topic"><option>Help with an order</option><option>Feedback</option><option>Allergy or ingredient question</option><option>Something else</option></select></label>
+      <label class="field grow"><span>Your message <b class="req">*</b></span><textarea name="message" required rows="4" maxlength="1200"></textarea></label>
+      <input type="text" name="website" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <button type="submit" class="button"><span>Send to ANKRITA</span></button>
+      <div class="form-status" role="status" aria-live="polite" hidden></div>
+    </form>
+    <p class="card-note">Prefer WhatsApp? <a class="inline-link" data-whatsapp="Hi ANKRITA! I need some help." target="_blank" rel="noopener noreferrer">Chat with us</a>. Or email <a class="inline-link" data-email></a>.</p>
+  </dialog>
+
+  <dialog id="cart-dialog" aria-labelledby="cart-title">
+    <div class="cart-header"><div><p class="eyebrow" id="cart-eyebrow">Fresh from Chef Anu's kitchen</p><h2 id="cart-title">Your bag.</h2></div><button type="button" class="icon-button" id="close-cart" aria-label="Close bag" title="Close bag">&#215;</button></div>
+    <section id="bag-step">
+      <div id="cart-items"></div>
+      <div class="cart-summary" id="cart-summary"><p><span>Subtotal</span><strong id="cart-total">₹0</strong></p><button type="button" class="button" id="checkout"><span>Continue to order</span></button><small>No online payment. You'll confirm and pay directly with ANKRITA.</small></div>
+    </section>
+    <form id="order-form" class="form" novalidate hidden>
+      <button type="button" class="back-link" id="back-to-bag">&#8592; Back to bag</button>
+      <div class="order-summary"><ul id="order-lines"></ul><p><span>Total</span><strong id="order-total"></strong></p></div>
+      <label class="field"><span>Your name <b class="req">*</b></span><input name="name" required maxlength="80" autocomplete="name"></label>
+      <label class="field"><span>Phone number <b class="req">*</b></span><span class="phone-input"><span class="dial" aria-hidden="true">+91</span><input name="phone" type="tel" required inputmode="numeric" autocomplete="tel-national" maxlength="10" pattern="[0-9]{10}" placeholder="9876543210" aria-label="Phone number, 10 digits after +91"></span></label>
+      <label class="field"><span>Email <small class="opt">(optional)</small></span><input name="email" type="email" maxlength="120" autocomplete="email" placeholder="you@example.com"></label>
+      <label class="field"><span>Location / address <b class="req">*</b></span><textarea name="address" required rows="3" maxlength="300" autocomplete="street-address" placeholder="Flat / house no., street, area, city, landmark"></textarea></label>
+      <div class="locate-row"><button type="button" class="chip-button" data-locate>Use my current location</button><p class="hint" data-locate-status role="status"></p></div>
+      <fieldset class="choice">
+        <legend>How will you get your order?</legend>
+        <label class="choice-card"><input type="radio" name="delivery" value="self-delivery" checked><span>I'll arrange my own delivery</span><small>Porter, Dunzo, Rapido, a friend or family</small></label>
+        <label class="choice-card"><input type="radio" name="delivery" value="pickup"><span>I'll pick it up</span><small>From ANKRITA's home kitchen</small></label>
+      </fieldset>
+      <p class="notice"><strong>ANKRITA doesn't offer delivery yet.</strong> We'll let you know when your order is ready, and you book your own courier or collect it.</p>
+      <div class="form-row">
+        <label class="field"><span>Date needed <b class="req">*</b></span><input name="needed" type="date" required></label>
+        <label class="field"><span>Time needed <b class="req">*</b></span><input name="time" type="time" required></label>
+      </div>
+      <p class="slot-hint">Pick-up and courier slots: Tue-Fri 8am-6pm, Sat-Sun 9am-4pm. Closed on Mondays.</p>
+      <label class="field"><span>Notes</span><textarea name="notes" rows="2" maxlength="400" placeholder="Eggless, less sweet, a gift message..."></textarea></label>
+      <input type="text" name="website" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <div class="form-actions">
+        <button type="submit" class="button"><span>Send order on WhatsApp</span></button>
+        <button type="button" class="button button-ghost" id="send-email"><span>Send order by email</span></button>
+      </div>
+      <div class="form-status" role="status" aria-live="polite" hidden></div>
+      <small class="privacy">Nothing is stored on this site. WhatsApp opens with your order ready to send; "Send order by email" delivers it straight to ANKRITA through the FormSubmit email service. Payment is arranged with ANKRITA after confirmation.</small>
+    </form>
+    <div id="checkout-message" role="status" hidden></div>
+  </dialog>
+  <a class="wa-fab" data-whatsapp="Hi ANKRITA! I'd like to know more about your bakes." target="_blank" rel="noopener noreferrer" aria-label="Chat with ANKRITA on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 20.5l1.4-4.6A8.4 8.4 0 1 1 8.2 19.2z"/><path d="M9.2 8.6c-.3.9.1 2.3 1.5 3.7s2.8 1.8 3.7 1.5l.9-1.2-1.8-1-.7.6c-.7-.3-1.3-.9-1.6-1.6l.6-.7-1-1.8z"/></svg><span>Chat with us</span></a>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
